@@ -21,3 +21,13 @@ function numeronyms(string){
 }
 
 console.log(numeronyms(input))
+
+
+/****************** Another way ******************/ 
+
+// const createNumeronym = (word) =>
+//   word[0] + (word.length - 2) + word[word.length - 1];
+// input
+//   .split(" ")
+//   .map((word) => (word.length >= 4 ? createNumeronym(word) : word))
+//   .join(" ");
