@@ -1,4 +1,4 @@
-str ="The 1  , Queen is here"
+let str ="The 1  , Queen is here"
 
 function joinChar(string){
 
