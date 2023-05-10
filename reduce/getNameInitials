@@ -2,9 +2,9 @@ let str ="The 1  , Queen is here"
 
 function joinChar(string){
 
-    const word = string.split(" ");
-    char =word.map(value=>value.match(/^[A-Za-z]+$/) && value[0]) 
-    output=char.join("")
+    let word = string.split(" ");
+    let char =word.map(value=>value.match(/^[A-Za-z]+$/) && value[0]) 
+    let output=char.join("")
 
     return output
     
