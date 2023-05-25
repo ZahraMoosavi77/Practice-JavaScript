@@ -33,6 +33,8 @@ console.log(obj2);
 //at the end all of them have some problem
 
 
+
+/*********************************************************************Another way********************************************
 // const deepClone = obj => {
 //     if (obj === null) return null;
 //     let clone = Object.assign({}, obj);
