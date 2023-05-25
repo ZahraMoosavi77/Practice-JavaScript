@@ -3,7 +3,7 @@ function arrayToList(array){
     const list = document.getElementById("myList");
     array.forEach(element => {
         const li = document.createElement("li");
-        li.innerText = element;
+        li.textContent = element;
         list.appendChild(li);
         
     });
@@ -11,5 +11,5 @@ function arrayToList(array){
 
 }
 
-let number = [1,2,3,4];
+let number = [1,2,3,6];
 arrayToList(number);
