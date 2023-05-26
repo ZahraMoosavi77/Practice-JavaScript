@@ -112,8 +112,7 @@ function completeToDo(element){
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);
     element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
-    console.log(LIST);
-    LIST[element.id].done = LIST[element.id] ? false : true;
+    LIST[element.id].done = LIST[element.id].done ? false : true;
     
 
 
@@ -124,10 +123,14 @@ function completeToDo(element){
 // remove to do 
 
 function removeToDO(element){
+    
 
     element.parentNode.parentNode.removeChild(element.parentNode);
 
     LIST[element.id].trash = true;
+    LIST = LIST.filter(item =>item.id != element.id);
+   
+    
 }
 
 
@@ -138,10 +141,11 @@ list.addEventListener("click", function(event){
     const elementJob = element.attributes.job.value;  // complete or delete
 
     if(elementJob === "complete"){
-
+        
         completeToDo(element);
     }else if(elementJob === "delete"){
         removeToDO(element);
+       
     }
     // add item to local storage (This code must be added where the LIST array is updated )
 
