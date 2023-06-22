@@ -1,6 +1,8 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 
 
@@ -41,7 +43,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9% ; 
+    padding: 20px 9% ; 
     /* ??? */
     background-color:transparent; 
     display: flex;
@@ -100,16 +102,30 @@ section{
 }
 
 .home{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding:  0 9%;
     /* background: url(../assets/video_image-tGxQe3iOM.jpeg) no-repeat;
     background-size: contain;
-    background-position: right; */
+    background-position: right;
+    background-size: 80%; */
+
     
 }
+/* 
+.home::after{
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--bg-color);
+    opacity: .6;
 
+} */
 
 .home-content{
     
@@ -694,6 +710,7 @@ span {
     font-size: 1.6rem;
 
  }
+
 
  .footer-iconTop a{
     position: relative;
