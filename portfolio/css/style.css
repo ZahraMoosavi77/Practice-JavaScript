@@ -43,7 +43,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 9% ; 
+    padding: 20px 132px ; 
     /* ??? */
     background-color:transparent; 
     display: flex;
@@ -52,6 +52,7 @@ body{
     align-items: center;
     z-index: 100;
     transition: .3s;
+    background: var(--bg-color);
     
 }
 .header.sticky {
@@ -831,9 +832,9 @@ span {
   }
 
   @media(max-width:768px){
-    .header{
+    /* .header{
         background: var(--bg-color);
-    }
+    } */
 
     #menu-icon{
         display: block;
