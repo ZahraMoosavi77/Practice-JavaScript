@@ -376,12 +376,16 @@ span {
 
 .about-content h3{
     font-size: 2.6rem;
+   
 
 }
 
 .about-content p{
+    
     font-size: 1.6rem;
-    margin: 20px 0 30px;
+    margin: 20px auto 30px;
+    text-align: justify;
+    width: 100%;
 }
 
 
@@ -450,6 +454,7 @@ span {
     border-radius: 6px;
     margin-bottom: 20px;
     overflow: hidden;
+    min-height: 200px;
 }
 
 .education-content .content::before{
